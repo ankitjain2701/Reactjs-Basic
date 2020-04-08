@@ -1,0 +1,208 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: lightblue;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+  .App{
+      background-color: white;
+      max-width: 992px;
+      margin: auto;
+  }
+  
+  nav{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid grey;
+      background-color: orange;
+      padding: 10px 20px;
+  }
+
+  .nav-menu li{
+      display: inline-block;
+      list-style: none;
+  }
+
+  .nav-menu-link{
+      display: inline-block;
+      margin: 5px;
+      border: 1px solid grey;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 5px;
+      padding: 3px 8px;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .nav-menu-link:hover{
+    border: 1px solid black;
+    background-color: papayawhip;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;     
+}
+
+.nav-menu-link.active{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.logo-link{
+    color: white;
+    text-decoration: none;
+}
+
+.home-image{
+    width: 100%;
+    height: 500px;
+    background-image:url('https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/02/07090029/f62ea06fb18593169e9511d9df9722fa7cd7a9af77cd8161a01dc4a1000646a7.jpg');
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+.home-image:hover{
+    background-image: url('https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/02/24211315/0f4be43c4171da2bfcd53c97632fc0c8c1c86f858206393bcf7598f2b2ac6da7-770x443.jpg');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.main-content{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.main-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.home-thumbnail-1{
+    background-image: url('https://cdn.shopify.com/s/files/1/1713/9363/products/product-image-265662099.jpg?v=1502944462')
+}
+
+.home-thumbnail-2{
+    background-image: url('https://cdn.shopify.com/s/files/1/1713/9363/products/product-image-265662099.jpg?v=1502944462')
+}
+
+.home-thumbnail-3{
+    background-image: url('https://cdn.shopify.com/s/files/1/1713/9363/products/product-image-265662099.jpg?v=1502944462')
+}
+
+.home-thumbnail-1,
+.home-thumbnail-2,
+.home-thumbnail-3{
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.home-thumbnail-1:hover,
+.home-thumbnail-2:hover,
+.home-thumbnail-3:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.thumbnail-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.portfolio-container{
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolio-image{
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-color: blanchedalmond;
+
+}
+.portfolio-image:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.back{
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid lightgray;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.image-profile{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-color: blanchedalmond;
+    transition: all 0.3s ease-in-out;
+}
+
+.demo-container{
+    display: inline-block;
+    text-align: center;
+}
+
+.demo-image{
+    width: 100%;
+    height: 500px;
+    background-image:url('https://drraa3ej68s2c.cloudfront.net/wp-content/uploads/2019/02/07090029/f62ea06fb18593169e9511d9df9722fa7cd7a9af77cd8161a01dc4a1000646a7.jpg');
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+.demo-image:hover{
+    background-image: url('https://avatars2.githubusercontent.com/u/6820?v=4');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    transform: scale(1.05);
+}
+.support-container{ 
+    display:inline-block;
+    text-align: center;
+}
+.support-image{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://avatars0.githubusercontent.com/u/810438?v=4g');  
+    background-size: cover;
+    transition: all 0.3s ease-in-out;  
+}
+.support-image:hover{
+    background-image: url('https://avatars2.githubusercontent.com/u/63648?v=4');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    transform: scale(1.05);
+}
